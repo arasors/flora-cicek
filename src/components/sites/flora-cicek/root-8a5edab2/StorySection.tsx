@@ -12,13 +12,13 @@ export function StorySection() {
         </div>
         <div>
           <p className="text-2xl leading-[1.32] font-medium tracking-[-0.035em] text-[#342d24] sm:text-4xl lg:text-5xl">
-            Flora Çiçek, İstanbul&apos;un Bağcılar ilçesindeki merkezinden toptan
-            yapay çiçek ve bitkiyi, mağazalardan etkinliklere uzanan profesyonel
-            alanlarla buluşturur.{" "}
+            Flora Çiçek, Bağcılar&apos;daki merkezinden mağazalara, organizasyon
+            firmalarına ve profesyonel projelere toptan yapay çiçek ve bitki
+            sağlar.{" "}
             <span className="text-[#a8782a]">
-              Seçki, dayanıklılık ve güçlü görsel etki
-            </span>{" "}
-            odağımızın merkezinde.
+              Ürün kalitesi, dayanıklılık ve doğal görünüm bizim için her zaman
+              önceliklidir.
+            </span>
           </p>
           <nav
             aria-label="Kurumsal bağlantılar"

@@ -18,7 +18,7 @@ export function ValueCtaSection() {
               Tek noktada profesyonel tedarik
             </span>
             <h2 className="mt-5 max-w-4xl text-4xl leading-[1.02] font-medium tracking-[-0.055em] sm:text-6xl lg:text-7xl">
-              İşletmenizin her köşesine uyum sağlayan bir koleksiyon.
+              İşletmenizin farklı ihtiyaçları için tek adres.
             </h2>
           </div>
           <div>

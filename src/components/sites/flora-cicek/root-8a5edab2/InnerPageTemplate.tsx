@@ -90,7 +90,7 @@ export function InnerPageTemplate({ page }: InnerPageTemplateProps) {
               <div className="absolute bottom-[2%] left-[4%] z-10 flex size-32 rotate-[-7deg] flex-col items-center justify-center rounded-full border border-[#a8782a]/20 bg-[#fdfbf7] text-center shadow-[0_20px_50px_rgba(33,24,13,0.15)] sm:size-40">
                 <span className="text-[9px] font-bold tracking-[0.19em] text-[#a8782a] uppercase">Flora</span>
                 <span className="mt-2 max-w-24 text-lg leading-tight font-medium tracking-[-0.04em] text-[#21180d] sm:text-xl">
-                  Profesyonel Seçki
+                  Toptan Ürünler
                 </span>
               </div>
             </div>
@@ -213,7 +213,7 @@ export function InnerPageTemplate({ page }: InnerPageTemplateProps) {
               <div aria-hidden="true" className="flora-cta-orbit absolute -top-40 -right-28 size-[32rem] rounded-full border border-white/15" />
               <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
                 <h2 className="max-w-4xl text-4xl leading-[0.98] font-medium tracking-[-0.055em] sm:text-6xl">
-                  Aradığınız seçkiyi birlikte oluşturalım.
+                  Aradığınız ürünleri birlikte belirleyelim.
                 </h2>
                 <div>
                   <p className="text-sm leading-6 text-white/75">

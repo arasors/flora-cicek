@@ -23,7 +23,7 @@ export function ProjectsGridSection() {
               06 — Uygulama galerisi
             </span>
             <h2 className="mt-4 max-w-3xl text-4xl leading-[0.98] font-semibold tracking-[-0.055em] text-[#241f18] sm:text-6xl">
-              Fikirden atmosfere.
+              Mekânlara ilham veren uygulamalar.
             </h2>
           </div>
           <Link

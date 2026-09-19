@@ -14,10 +14,10 @@ export function AllServicesSection() {
         <header className="mb-12 flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
           <div>
             <span className="text-xs font-bold tracking-[0.2em] text-[#a8782a] uppercase">
-              03 — Ürün evreni
+              03 — Ürün grupları
             </span>
             <h2 className="mt-4 max-w-3xl text-4xl leading-[0.98] font-semibold tracking-[-0.055em] text-[#241f18] sm:text-6xl">
-              Tek koleksiyon, onlarca olasılık.
+              Birbirini tamamlayan ürün grupları.
             </h2>
           </div>
           <p className="max-w-lg text-base leading-7 text-[#6e665a]">

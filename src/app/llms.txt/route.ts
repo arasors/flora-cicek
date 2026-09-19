@@ -18,7 +18,7 @@ export function GET() {
     "",
     "## Ana sayfalar",
     "",
-    `- [Ana sayfa](${absoluteUrl("/")}): Flora Çiçek ürün evreni ve toptan satış yaklaşımı.`,
+    `- [Ana sayfa](${absoluteUrl("/")}): Flora Çiçek ürün grupları ve toptan satış yaklaşımı.`,
     ...primaryPages.map(
       (page) => `- [${page.title}](${absoluteUrl(`/${page.path}`)}): ${page.summary}`,
     ),

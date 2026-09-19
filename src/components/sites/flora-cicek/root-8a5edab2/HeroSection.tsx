@@ -9,23 +9,23 @@ import { BRANDED_ASSET_ROOT, PHONE_DISPLAY, PHONE_HREF } from "./data";
 const heroSlides = [
   {
     eyebrow: "İstanbul’dan profesyonellere",
-    title: "Toptan çiçeğin yeni sahnesi.",
+    title: "Toptan çiçekte aradığınız çeşitlilik.",
     description:
-      "Seçkin yapay çiçek, bitki ve aranjman koleksiyonlarıyla satış alanlarınıza güçlü bir karakter kazandırın.",
+      "Yapay çiçek, bitki ve aranjman koleksiyonlarımızla mağazanız veya projeniz için doğru ürünleri kolayca bulun.",
     image: `${BRANDED_ASSET_ROOT}/hero.png`,
     alt: "Flora Çiçek yapay çiçek ve bitki koleksiyonu",
   },
   {
     eyebrow: "Organizasyon koleksiyonu",
-    title: "Her etkinliğe güçlü bir atmosfer.",
+    title: "Her etkinliğe yakışan çiçekler.",
     description:
       "Düğün, davet, vitrin ve özel projeler için birbiriyle uyumlu çiçek ve dekorasyon ürünleri.",
     image: `${BRANDED_ASSET_ROOT}/catalog/tavan-yapay-cicek.jpg`,
     alt: "Organizasyon için yapay çiçek uygulaması",
   },
   {
-    eyebrow: "Dayanıklı profesyonel seçki",
-    title: "Güneşe hazır, zamansız yeşil.",
+    eyebrow: "İç ve dış mekân ürünleri",
+    title: "Güneşe dayanıklı, her mevsim yeşil.",
     description:
       "İç ve dış mekânlar için uzun ömürlü, doğal görünümlü yapay bitki ve dikey bahçe çözümleri.",
     image: `${BRANDED_ASSET_ROOT}/catalog/dikey-bahce-buyuk.jpg`,
@@ -33,9 +33,9 @@ const heroSlides = [
   },
   {
     eyebrow: "Flora Çiçek koleksiyonları",
-    title: "Mağazanız için sürekli değişen ilham.",
+    title: "Mağazanız için her sezon yeni seçenekler.",
     description:
-      "Geniş ürün seçkisi ve toptan satış odağıyla stoklarınıza her sezon taze bir bakış katın.",
+      "Geniş ürün yelpazemiz ve toptan satış desteğimizle mağazanızın ürün çeşitliliğini her sezon yenileyin.",
     image: `${BRANDED_ASSET_ROOT}/catalog/dev-agac.jpg`,
     alt: "Büyük yapay ağaç ve bitki koleksiyonu",
   },
@@ -83,7 +83,7 @@ export function HeroSection() {
               <Sparkles aria-hidden="true" className="size-4" />
             </span>
             <span className="text-[11px] font-semibold tracking-[0.22em] text-[#7a5317] uppercase sm:text-xs">
-              Toptan • Seçkin • Zamansız
+              Toptan • Kaliteli • Çeşitli
             </span>
           </div>
 
@@ -191,7 +191,7 @@ export function HeroSection() {
 
           <div className="absolute right-[1%] bottom-[7%] z-20 flex size-28 rotate-6 flex-col items-center justify-center rounded-full border border-white/60 bg-[#21180d] text-center text-white shadow-2xl sm:size-32">
             <span className="text-[10px] font-semibold tracking-[0.17em] uppercase">Flora</span>
-            <span className="mt-1 text-xl font-semibold italic">Seçkisi</span>
+            <span className="mt-1 text-xl font-semibold italic">Koleksiyonu</span>
             <ArrowDownRight aria-hidden="true" className="mt-1 size-4 text-[#dfc38d]" />
           </div>
         </div>

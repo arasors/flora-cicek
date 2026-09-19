@@ -45,7 +45,7 @@ export const featureServices: FeatureService[] = [
 
 export const stats: StatItem[] = [
   { value: "Toptan", label: "Satış Odaklı Ürün Tedariği" },
-  { value: "1. Kalite", label: "Seçkin Yapay Çiçek ve Bitkiler" },
+  { value: "1. Kalite", label: "Kaliteli Yapay Çiçek ve Bitkiler" },
   { value: "İstanbul", label: "Bağcılar Merkezli Hizmet" },
 ];
 

@@ -33,10 +33,10 @@ export function InspirationCarouselSection() {
         <header className="mb-12 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div>
             <span className="text-xs font-bold tracking-[0.2em] text-[#dfc38d] uppercase">
-              05 — İlham akışı
+              05 — Uygulamalardan ilham
             </span>
             <h2 className="mt-4 max-w-4xl text-4xl leading-[0.96] font-medium tracking-[-0.055em] sm:text-6xl lg:text-7xl">
-              Koleksiyon hareket halinde.
+              Ürünlerimizi farklı uygulamalarda görün.
             </h2>
           </div>
           <div className="flex gap-2">

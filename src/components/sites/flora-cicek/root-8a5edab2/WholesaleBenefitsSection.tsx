@@ -36,11 +36,11 @@ export function WholesaleBenefitsSection() {
               id="wholesale-benefits-heading"
               className="mt-4 text-4xl leading-[1] font-semibold tracking-[-0.055em] text-[#241f18] sm:text-5xl"
             >
-              Güzel görünür. Güçlü çalışır.
+              Kaliteli ürün, güvenilir tedarik.
             </h2>
             <p className="mt-6 max-w-md text-base leading-7 text-[#6e665a]">
-              Yalnızca ürün değil; profesyonel tedarik sürecinizi kolaylaştıran
-              seçki, çeşitlilik ve çözüm ortaklığı sunuyoruz.
+              Geniş ürün çeşitliliğini, toptan satış deneyimi ve doğrudan
+              iletişimle bir araya getiriyoruz.
             </p>
           </header>
 

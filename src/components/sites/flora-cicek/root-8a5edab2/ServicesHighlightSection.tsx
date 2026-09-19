@@ -12,10 +12,10 @@ export function ServicesHighlightSection() {
       <header className="mb-14 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
         <div>
           <span className="text-xs font-bold tracking-[0.2em] text-[#a8782a] uppercase">
-            01 — Seçkiler
+            01 — Öne çıkan ürünler
           </span>
           <h2 className="mt-4 max-w-2xl text-4xl leading-[0.98] font-semibold tracking-[-0.055em] text-[#241f18] sm:text-6xl">
-            Dekorasyonun güçlü aktörleri.
+            Projelerinize değer katan ürünler.
           </h2>
         </div>
         <p className="max-w-2xl text-base leading-7 text-[#6e665a] lg:justify-self-end lg:text-lg">

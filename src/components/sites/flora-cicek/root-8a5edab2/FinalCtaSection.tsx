@@ -14,7 +14,7 @@ export function FinalCtaSection() {
               Bir sonraki projeniz
             </span>
             <h2 className="mt-5 max-w-5xl text-4xl leading-[0.96] font-medium tracking-[-0.06em] sm:text-6xl lg:text-8xl">
-              Doğru seçki bir konuşmayla başlar.
+              İhtiyacınıza uygun ürünleri birlikte belirleyelim.
             </h2>
           </div>
           <div>

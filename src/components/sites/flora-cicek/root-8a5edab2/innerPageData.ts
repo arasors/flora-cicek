@@ -30,7 +30,7 @@ const productSummaries: Record<string, string> = {
   "gunese-dayanikli-urunler":
     "Yoğun ışık alan projeler için görünümünü uzun süre korumaya odaklanan dayanıklı ürün alternatifleri.",
   "organizasyon-cicekleri":
-    "Düğün, davet ve özel etkinliklerin atmosferini bütünleyen, birlikte kullanılmak üzere seçilmiş çiçek grupları.",
+    "Düğün, davet ve özel etkinlik dekorasyonlarında birlikte kullanabileceğiniz uyumlu çiçek grupları.",
   "organizasyon-ekipmanlari":
     "Profesyonel uygulamaları hızlandıran ve çiçek kompozisyonlarını tamamlayan organizasyon ekipmanları.",
   "dikey-bahce":
@@ -38,31 +38,31 @@ const productSummaries: Record<string, string> = {
   "saksili-yapay-bitkiler":
     "Ofis, mağaza ve konaklama alanlarına doğrudan yerleştirilebilen tamamlanmış saksılı bitki seçenekleri.",
   "yapay-sarmasiklar":
-    "Tavan, duvar ve geçiş alanlarında akışkan yeşil dokular kurmak için esnek yapay sarmaşık çeşitleri.",
+    "Tavan, duvar ve geçiş alanlarına doğal bir yeşillik görünümü kazandıran esnek yapay sarmaşık çeşitleri.",
   "yapay-bonsai":
-    "Kompakt alanlarda heykelsi bir etki oluşturan, güçlü gövde ve yaprak detaylarına sahip bonsai seçkisi.",
+    "Kompakt alanlarda dekoratif bir vurgu oluşturan, güçlü gövde ve yaprak detaylarına sahip yapay bonsailer.",
   "dekoratif-yapay-yesillikler":
-    "Kompozisyonlara hacim, ritim ve doğal katmanlar ekleyen tamamlayıcı dekoratif yeşillikler.",
+    "Çiçek düzenlemelerine dolgunluk ve doğal bir görünüm kazandıran tamamlayıcı dekoratif yeşillikler.",
 };
 
 const productPages: InnerPageContent[] = services.map((service) => ({
   path: `urunler/${service.slug}`,
-  eyebrow: "Flora profesyonel koleksiyon",
+  eyebrow: "Profesyonel ürün grubu",
   title: service.label,
   summary: productSummaries[service.slug],
   image: service.image,
   imageAlt: `${service.label} koleksiyonu`,
-  introTitle: "Projeye uyum sağlayan seçki",
+  introTitle: "Projeye uygun ürün seçenekleri",
   intro: `${service.label} grubumuzu mağazalar, organizasyon firmaları, mimari projeler ve profesyonel dekorasyon uygulamaları için farklı ölçü, renk ve kullanım senaryolarını dikkate alarak oluşturuyoruz. Güncel ürün ve stok bilgisi için ekibimiz size doğrudan destek verir.`,
   highlights: [
-    "Profesyonel ve toptan satış odağı",
+    "Toptan satışa uygun ürünler",
     "Birbiriyle uyumlu ürün alternatifleri",
     "Proje ve kullanım alanına göre yönlendirme",
   ],
   sections: [
     {
       title: "Doğru ürünü birlikte seçelim",
-      body: "İhtiyaç duyduğunuz adet, kullanım alanı, renk paleti ve hedeflenen görünümü ekibimizle paylaşın. Koleksiyondaki uygun alternatifleri projenizin dili ve bütçesi doğrultusunda birlikte netleştirelim.",
+      body: "İhtiyaç duyduğunuz adet, kullanım alanı, renk paleti ve hedeflediğiniz görünümü ekibimizle paylaşın. Koleksiyondaki uygun alternatifleri beklentiniz ve bütçeniz doğrultusunda birlikte netleştirelim.",
     },
     {
       title: "Toptan sipariş ve bilgi",
@@ -74,13 +74,13 @@ const productPages: InnerPageContent[] = services.map((service) => ({
 const corporatePages: InnerPageContent[] = [
   {
     path: "urunler",
-    eyebrow: "Flora ürün evreni",
-    title: "Her projeye uyumlanan koleksiyonlar.",
+    eyebrow: "Flora ürün grupları",
+    title: "Her proje için tamamlayıcı ürünler.",
     summary:
-      "Yapay çiçekten büyük ağaçlara, dikey bahçeden organizasyon ürünlerine uzanan profesyonel toptan seçki.",
+      "Yapay çiçekten büyük ağaçlara, dikey bahçeden organizasyon ürünlerine uzanan geniş toptan ürün yelpazesi.",
     image: `${BRANDED_ASSET_ROOT}/catalog/botanik-bahce.jpg`,
     imageAlt: "Flora Çiçek ürün koleksiyonları",
-    introTitle: "Tek merkezden güçlü çeşitlilik",
+    introTitle: "Tüm ürün grupları tek noktada",
     intro:
       "Flora Çiçek koleksiyonları mağaza stokları, etkinlik uygulamaları, vitrinler ve ticari mekânlar için birbirini tamamlayan ürün gruplarından oluşur. İhtiyacınız olan görünümü farklı kategorileri birlikte kullanarak kurabilirsiniz.",
     highlights: ["12 ana ürün grubu", "Toptan satış desteği", "İstanbul merkezli hızlı iletişim"],
@@ -98,19 +98,19 @@ const corporatePages: InnerPageContent[] = [
   {
     path: "hakkimizda",
     eyebrow: "Flora Çiçek / İstanbul",
-    title: "Doğal etkinin profesyonel yorumu.",
+    title: "Yapay çiçek ve bitkide profesyonel çözüm ortağınız.",
     summary:
-      "Flora Çiçek, yapay çiçek ve bitki ürünlerini güçlü bir seçki anlayışıyla profesyonel alıcılarla buluşturur.",
+      "Flora Çiçek, geniş yapay çiçek ve bitki çeşitliliğini profesyonel alıcılarla buluşturur.",
     image: `${BRANDED_ASSET_ROOT}/hero.png`,
     imageAlt: "Flora Çiçek koleksiyonu",
-    introTitle: "Seçki, güven ve sürdürülebilir iş ilişkisi",
+    introTitle: "Kalite, güven ve uzun süreli iş ortaklığı",
     intro:
       "İstanbul Bağcılar’daki merkezimizden mağazalara, organizasyon firmalarına ve proje profesyonellerine hizmet veriyoruz. Amacımız yalnızca ürün sağlamak değil, doğru koleksiyonun doğru kullanım alanıyla buluşmasını kolaylaştırmak.",
-    highlights: ["İstanbul merkezli hizmet", "Toptan satış uzmanlığı", "Profesyonel ürün seçkisi"],
+    highlights: ["İstanbul merkezli hizmet", "Toptan satış uzmanlığı", "Geniş ürün çeşitliliği"],
     sections: [
       {
         title: "Bakış açımız",
-        body: "İyi bir yapay bitkinin yalnızca gerçeğe yakın görünmesi yetmez; mekânın ölçeğiyle, ışığıyla ve kullanım biçimiyle de uyum kurması gerekir. Ürün seçkimizi bu bütünsel bakışla oluşturuyoruz.",
+        body: "İyi bir yapay bitkinin yalnızca gerçeğe yakın görünmesi yetmez; mekânın ölçeğiyle, ışığıyla ve kullanım biçimiyle de uyumlu olması gerekir. Ürün gruplarımızı bu yaklaşım doğrultusunda oluşturuyoruz.",
       },
       {
         title: "Kimlerle çalışıyoruz?",
@@ -121,22 +121,22 @@ const corporatePages: InnerPageContent[] = [
   {
     path: "galeri",
     eyebrow: "Flora uygulamaları",
-    title: "Üründen atmosfere uzanan fikirler.",
+    title: "Uygulama örnekleri ve dekorasyon fikirleri.",
     summary:
       "Farklı mekân ve etkinliklerde yapay çiçek, bitki ve yeşilliklerin oluşturabileceği etkiden ilham alın.",
     image: `${BRANDED_ASSET_ROOT}/projeler/proje-001.jpg`,
     imageAlt: "Flora Çiçek uygulama örneği",
     introTitle: "Her alan kendi kompozisyonunu ister",
     intro:
-      "Dikey yüzeylerden tavan uygulamalarına, saksılı bitkilerden büyük ağaçlara kadar her ürün mekânda farklı bir görev üstlenir. Galerimiz koleksiyonların birlikte nasıl çalışabileceğine dair bir başlangıç noktası sunar.",
-    highlights: ["Ticari mekân fikirleri", "Etkinlik atmosferleri", "Vitrin ve karşılama alanları"],
+      "Dikey yüzeylerden tavan uygulamalarına, saksılı bitkilerden büyük ağaçlara kadar her ürün mekânda farklı bir işlev üstlenir. Galerimiz, ürün gruplarını bir arada nasıl kullanabileceğinizi gösterir.",
+    highlights: ["Ticari mekân fikirleri", "Organizasyon uygulamaları", "Vitrin ve karşılama alanları"],
     sections: [
       {
         title: "İlhamı projeye dönüştürün",
         body: "Beğendiğiniz görünümü, alan ölçülerini ve hedeflediğiniz atmosferi bizimle paylaşın. Benzer etkiyi oluşturabilecek güncel ürün seçenekleri konusunda ekibimizden bilgi alın.",
       },
       {
-        title: "Katmanlı kullanım",
+        title: "Doğal ve dengeli görünüm",
         body: "Daha doğal ve zengin bir görünüm için farklı yaprak boylarını, çiçek formlarını ve yeşil tonlarını birlikte değerlendirin. Tamamlayıcı ürün grupları kompozisyonun derinliğini artırır.",
       },
     ],
@@ -146,7 +146,7 @@ const corporatePages: InnerPageContent[] = [
     eyebrow: "Profesyonel tedarik",
     title: "Toptan sipariş sürecini sadeleştirin.",
     summary:
-      "İşletmenizin ürün ihtiyacını, proje takvimini ve hedeflenen görünümü birlikte değerlendirerek doğru seçkiyi planlayalım.",
+      "İşletmenizin ürün ihtiyacını, proje takvimini ve hedeflenen görünümü birlikte değerlendirerek doğru ürünleri planlayalım.",
     image: `${BRANDED_ASSET_ROOT}/catalog/agn2023-13.jpg`,
     imageAlt: "Flora Çiçek toptan satış ürünleri",
     introTitle: "İhtiyaçtan doğru koleksiyona",
