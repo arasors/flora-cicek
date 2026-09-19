@@ -64,7 +64,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #fdfbf7;
   --foreground: #241f18;
   --card: #ffffff;
   --card-foreground: #241f18;
@@ -97,8 +97,187 @@
   letter-spacing: -0.02em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.flora-site {
+  overflow: clip;
+  background: #fdfbf7;
+}
+
+.flora-scroll-reveal {
+  transition-property: opacity, transform, filter;
+  transition-duration: 900ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform, filter;
+}
+
+.flora-hero-grid {
+  opacity: 0.36;
+  background-image:
+    linear-gradient(rgba(122, 83, 23, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 83, 23, 0.07) 1px, transparent 1px);
+  background-size: 78px 78px;
+  mask-image: linear-gradient(to right, black, transparent 76%);
+}
+
+.flora-ambient {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(2px);
+  opacity: 0.62;
+  pointer-events: none;
+}
+
+.flora-ambient-one {
+  top: -12%;
+  left: 18%;
+  width: 36rem;
+  height: 36rem;
+  background: radial-gradient(circle, rgba(220, 176, 89, 0.32), transparent 68%);
+  animation: flora-ambient-one 14s ease-in-out infinite alternate;
+}
+
+.flora-ambient-two {
+  right: -12%;
+  bottom: -26%;
+  width: 42rem;
+  height: 42rem;
+  background: radial-gradient(circle, rgba(87, 106, 68, 0.26), transparent 68%);
+  animation: flora-ambient-two 18s ease-in-out infinite alternate;
+}
+
+.flora-ambient-three {
+  top: 30%;
+  left: -16%;
+  width: 28rem;
+  height: 28rem;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.86), transparent 65%);
+  animation: flora-ambient-three 12s ease-in-out infinite alternate;
+}
+
+.flora-hero-copy {
+  animation: flora-copy-enter 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.flora-hero-image {
+  animation: flora-image-enter 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.flora-hero-progress {
+  width: 100%;
+  transform-origin: left center;
+  animation: flora-progress 5.6s linear both;
+}
+
+.flora-hero-panel {
+  isolation: isolate;
+}
+
+.flora-hero-panel-main {
+  clip-path: polygon(14% 0, 100% 0, 86% 100%, 0 100%);
+}
+
+.flora-hero-panel-back {
+  clip-path: polygon(22% 0, 100% 7%, 100% 100%, 0 92%);
+  animation: flora-float-a 8s ease-in-out infinite alternate;
+}
+
+.flora-hero-panel-front {
+  clip-path: polygon(16% 0, 100% 8%, 82% 100%, 0 91%);
+  animation: flora-float-b 7s ease-in-out infinite alternate;
+}
+
+@keyframes flora-copy-enter {
+  from { opacity: 0; transform: translateY(24px); filter: blur(6px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes flora-image-enter {
+  from { opacity: 0; transform: translateX(26px) scale(1.04); filter: saturate(0.75); }
+  to { opacity: 1; transform: translateX(0) scale(1); filter: saturate(1); }
+}
+
+@keyframes flora-progress {
+  from { transform: translateY(-50%) scaleX(0); }
+  to { transform: translateY(-50%) scaleX(1); }
+}
+
+@keyframes flora-float-a {
+  from { transform: translate3d(0, 0, 0) rotate(0.5deg); }
+  to { transform: translate3d(8px, -14px, 0) rotate(-0.8deg); }
+}
+
+@keyframes flora-float-b {
+  from { transform: translate3d(0, 0, 0) rotate(-1deg); }
+  to { transform: translate3d(-8px, 12px, 0) rotate(0.7deg); }
+}
+
+@keyframes flora-ambient-one {
+  from { transform: translate3d(-5%, -2%, 0) scale(0.92); }
+  to { transform: translate3d(16%, 12%, 0) scale(1.1); }
+}
+
+@keyframes flora-ambient-two {
+  from { transform: translate3d(4%, 8%, 0) scale(1); }
+  to { transform: translate3d(-18%, -12%, 0) scale(1.12); }
+}
+
+@keyframes flora-ambient-three {
+  from { transform: translate3d(0, -8%, 0); }
+  to { transform: translate3d(18%, 12%, 0); }
+}
+
+.flora-cta-orbit {
+  box-shadow:
+    0 0 0 5rem rgba(255, 255, 255, 0.025),
+    0 0 0 10rem rgba(255, 255, 255, 0.018);
+  animation: flora-cta-orbit 12s ease-in-out infinite alternate;
+}
+
+.flora-mobile-menu {
+  animation: flora-menu-enter 480ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.flora-mobile-menu-item {
+  animation: flora-menu-item-enter 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.flora-mobile-menu-item:nth-child(2) { animation-delay: 45ms; }
+.flora-mobile-menu-item:nth-child(3) { animation-delay: 90ms; }
+.flora-mobile-menu-item:nth-child(4) { animation-delay: 135ms; }
+.flora-mobile-menu-item:nth-child(5) { animation-delay: 180ms; }
+
+@keyframes flora-menu-enter {
+  from { opacity: 0; clip-path: circle(0 at calc(100% - 2.75rem) 2.5rem); }
+  to { opacity: 1; clip-path: circle(150% at calc(100% - 2.75rem) 2.5rem); }
+}
+
+@keyframes flora-menu-item-enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes flora-cta-orbit {
+  from { transform: translate3d(0, 0, 0) scale(0.94); }
+  to { transform: translate3d(-24px, 28px, 0) scale(1.06); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .flora-site *,
+  .flora-site *::before,
+  .flora-site *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .flora-scroll-reveal {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
 }
 
 @layer base {

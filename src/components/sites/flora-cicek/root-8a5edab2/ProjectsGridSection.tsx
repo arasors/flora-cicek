@@ -1,43 +1,61 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { productImages } from "./data";
-import { FloraStamp } from "./FloraStamp";
+
+const mosaicClasses = [
+  "sm:col-span-2 sm:row-span-2",
+  "",
+  "",
+  "sm:row-span-2",
+  "",
+  "sm:col-span-2",
+] as const;
 
 export function ProjectsGridSection() {
   return (
-    <section id="galeri" className="scroll-mt-20 border-t border-[#e8dfd0]">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-9 flex items-end justify-between">
-          <h2 className="text-3xl font-extrabold text-[#241f18]">
-            ÜRÜN GALERİSİ
-          </h2>
-
+    <section id="galeri" className="scroll-mt-24 px-5 py-24 sm:px-8 lg:py-32">
+      <div className="mx-auto max-w-[1380px]">
+        <header className="mb-12 flex items-end justify-between gap-6">
+          <div>
+            <span className="text-xs font-bold tracking-[0.2em] text-[#a8782a] uppercase">
+              06 — Uygulama galerisi
+            </span>
+            <h2 className="mt-4 max-w-3xl text-4xl leading-[0.98] font-semibold tracking-[-0.055em] text-[#241f18] sm:text-6xl">
+              Fikirden atmosfere.
+            </h2>
+          </div>
           <Link
             href="#urunler"
-            className="hidden items-center gap-1 text-base leading-6 font-semibold text-[#a8782a] transition-colors duration-180 ease-out hover:text-[#7a5317] sm:flex"
+            className="group hidden items-center gap-2 border-b border-[#a8782a]/30 pb-1 text-sm font-semibold text-[#7a5317] sm:flex"
           >
-            Tüm ürün grupları
-            <ArrowRight aria-hidden="true" className="size-[18px]" strokeWidth={2} />
+            Ürün grupları
+            <ArrowUpRight
+              aria-hidden="true"
+              className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+            />
           </Link>
-        </div>
+        </header>
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="grid auto-rows-[180px] grid-cols-2 gap-3 sm:auto-rows-[230px] sm:grid-cols-4 lg:auto-rows-[285px]">
           {productImages.map((image, index) => (
-            <div
+            <figure
               key={image}
-              className="group relative aspect-square overflow-hidden rounded-lg border border-[#e8dfd0]"
+              className={`group relative overflow-hidden rounded-[1.15rem] bg-[#e8dfd0] ${mosaicClasses[index % mosaicClasses.length]}`}
             >
               <Image
                 src={image}
-                alt={`Flora Çiçek ürün galerisi ${index + 1}`}
+                alt={`Flora Çiçek uygulama galerisi ${index + 1}`}
                 fill
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-105"
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.055]"
               />
-              <FloraStamp />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#21180d]/45 via-transparent to-transparent opacity-30 transition-opacity duration-500 group-hover:opacity-100" />
+              <figcaption className="absolute right-5 bottom-5 z-20 translate-y-2 text-[10px] font-bold tracking-[0.16em] text-white opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                UYGULAMA / {String(index + 1).padStart(2, "0")}
+              </figcaption>
+            </figure>
           ))}
         </div>
       </div>
