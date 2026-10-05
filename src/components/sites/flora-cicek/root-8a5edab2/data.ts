@@ -2,6 +2,7 @@ import type { FeatureService, ServiceItem, SiteLink, StatItem } from "./types";
 
 export const ASSET_ROOT = "/sites/flora-cicek/root-8a5edab2/images";
 export const BRANDED_ASSET_ROOT = `${ASSET_ROOT}/branded`;
+export const FLORA_GALLERY_ROOT = "/images";
 export const PHONE_DISPLAY = "0531 334 05 10";
 export const PHONE_HREF = "tel:+905313340510";
 export const WHATSAPP_HREF = "https://wa.me/905313340510";
@@ -71,35 +72,9 @@ export const services: ServiceItem[] = serviceRows.map(([label, image, slug]) =>
   slug,
 }));
 
-const inspirationFiles = [
-  "agn2023-1.jpg",
-  "agn2023-2.jpg",
-  "agn2023-3.jpg",
-  "agn2023-8.jpg",
-  "agn2023-12.jpg",
-  "agn2023-13.jpg",
-  "agn-yp-2.jpg",
-  "agn-yp-3.jpg",
-  "agn-yp7.jpg",
-  "agn-yp8.jpg",
-  "dikey-bahce-buyuk.jpg",
-  "dikey-bahce-dekoru.jpg",
-  "dikey-bahce-dekoru-1.jpg",
-  "tavan-yapay-cicek.jpg",
-  "tavan-yapay-cicek-1.jpg",
-  "dev-agac.jpg",
-  "bambu-agaci-yapay.jpg",
-  "soklanmis-palmiye-agnyapaycicek.jpg",
-  "starlice-dekoru-agn-2.jpg",
-  "lobi-kopya.jpg",
-  "botanik-bahce.jpg",
-  "top-agac-yapay.jpg",
-  "merdiven-alti-yapay-cicek.jpg",
-  "agn-duvar-dikey-bahce.jpg",
-];
-
-export const inspirationImages = inspirationFiles.map(
-  (file) => `${BRANDED_ASSET_ROOT}/catalog/${file}`,
+export const inspirationImages = Array.from(
+  { length: 49 },
+  (_, index) => `${FLORA_GALLERY_ROOT}/f${index + 1}.jpeg`,
 );
 
 export const productImages = Array.from(

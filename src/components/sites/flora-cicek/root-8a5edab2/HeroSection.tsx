@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowDownRight, ArrowRight, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import { BRANDED_ASSET_ROOT, PHONE_DISPLAY, PHONE_HREF } from "./data";
+import { FLORA_GALLERY_ROOT, PHONE_DISPLAY, PHONE_HREF } from "./data";
 
 const heroSlides = [
   {
@@ -12,38 +12,38 @@ const heroSlides = [
     title: "Toptan çiçekte aradığınız çeşitlilik.",
     description:
       "Yapay çiçek, bitki ve aranjman koleksiyonlarımızla mağazanız veya projeniz için doğru ürünleri kolayca bulun.",
-    image: `${BRANDED_ASSET_ROOT}/hero.png`,
-    alt: "Flora Çiçek yapay çiçek ve bitki koleksiyonu",
+    image: `${FLORA_GALLERY_ROOT}/f11.jpeg`,
+    alt: "Flora Çiçek mağazası ve yapay çiçek koleksiyonu",
   },
   {
     eyebrow: "Organizasyon koleksiyonu",
     title: "Her etkinliğe yakışan çiçekler.",
     description:
       "Düğün, davet, vitrin ve özel projeler için birbiriyle uyumlu çiçek ve dekorasyon ürünleri.",
-    image: `${BRANDED_ASSET_ROOT}/catalog/tavan-yapay-cicek.jpg`,
-    alt: "Organizasyon için yapay çiçek uygulaması",
+    image: `${FLORA_GALLERY_ROOT}/f2.jpeg`,
+    alt: "Mavi yapay çiçeklerle hazırlanmış organizasyon alanı",
   },
   {
     eyebrow: "İç ve dış mekân ürünleri",
     title: "Güneşe dayanıklı, her mevsim yeşil.",
     description:
       "İç ve dış mekânlar için uzun ömürlü, doğal görünümlü yapay bitki ve dikey bahçe çözümleri.",
-    image: `${BRANDED_ASSET_ROOT}/catalog/dikey-bahce-buyuk.jpg`,
-    alt: "Flora Çiçek dikey bahçe uygulaması",
+    image: `${FLORA_GALLERY_ROOT}/f18.jpeg`,
+    alt: "Saksılı yapay monstera bitkisi",
   },
   {
     eyebrow: "Flora Çiçek koleksiyonları",
     title: "Mağazanız için her sezon yeni seçenekler.",
     description:
       "Geniş ürün yelpazemiz ve toptan satış desteğimizle mağazanızın ürün çeşitliliğini her sezon yenileyin.",
-    image: `${BRANDED_ASSET_ROOT}/catalog/dev-agac.jpg`,
-    alt: "Büyük yapay ağaç ve bitki koleksiyonu",
+    image: `${FLORA_GALLERY_ROOT}/f10.jpeg`,
+    alt: "Flora Çiçek yapay çiçek aranjmanı",
   },
 ] as const;
 
 const supportImages = [
-  `${BRANDED_ASSET_ROOT}/catalog/agn-yapay-cicek-0001.jpeg`,
-  `${BRANDED_ASSET_ROOT}/catalog/agn2023-3.jpg`,
+  `${FLORA_GALLERY_ROOT}/f31.jpeg`,
+  `${FLORA_GALLERY_ROOT}/f39.jpeg`,
 ] as const;
 
 export function HeroSection() {
@@ -158,7 +158,6 @@ export function HeroSection() {
               src={supportImages[1]}
               alt=""
               fill
-              priority
               sizes="(max-width: 1024px) 42vw, 22vw"
               className="object-cover opacity-70 mix-blend-luminosity"
             />
@@ -172,7 +171,7 @@ export function HeroSection() {
               src={slide.image}
               alt={slide.alt}
               fill
-              priority={activeSlide === 0}
+              loading={activeSlide === 0 ? "eager" : "lazy"}
               sizes="(max-width: 1024px) 68vw, 38vw"
               className="object-cover"
             />
